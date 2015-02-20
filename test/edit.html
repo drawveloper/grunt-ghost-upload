@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<!--[if lte IE 9]> <html class="ghost-org no-js old-ie "> <![endif]-->
+<!--[if gt IE 9]> <html class="ghost-org no-js "> <!--<![endif]-->
+<!--[if !IE]> --> <html class="ghost-org "> <!-- <![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+    <title>Edit Your Blog</title>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:title" content="Edit Your Blog">
+    <meta property="twitter:site" content="@TryGhost">
+    <meta property="twitter:domain" content="Ghost.org"/>
+    <meta property="twitter:url" content="https://ghost.org/blogs/example"/>
+    <meta property="og:site_name" content="Ghost"/>
+    <meta property="fb:admins" content="511697361"/>
+    <meta property="og:title" content="Edit Your Blog"/>
+    <meta property="og:url" content="https://ghost.org/blogs/example"/>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="cleartype" content="on"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-e13fe17b11ad125601924cfb260f20da.ico"/>
+    <link rel="canonical" href="https://ghost.org/blogs/example"/>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:700,600,400,300"/>
+    <link data-turbolinks-track="true" href="/assets/application-c78a0e2c7b99fa69ca7ba0a6380157ef.css" media="all" rel="stylesheet"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/assets/application-e6f27ecae5bdb825f9258c9a2696034d.js"></script>
+    <meta content="authenticity_token" name="csrf-param"/>
+    <meta content="LKdb4MFixKel5A/tqd6MFO75LyXPD5ms9TYMb03OdP0=" name="csrf-token"/>
+    <script type="text/javascript">
+        window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+                window.analytics.load("uj8ix0aatc");
+        window.analytics.page();
+    </script>
+</head>
+<body class="page edit-blog" data-logged-in-user=''>
+<header id="global-header" class="global-header navbar">
+    <nav role="navigation">
+        <div class="wrapper">
+            <a class="ghost-logo" href="https://ghost.org/"><span>Ghost</span></a>
+            <button type="button" class="mobile-menu" data-toggle="collapse" data-target=".navbar-collapse"><span class="hidden">Menu</span></button>
+            <ul id="main-menu" class="navbar-collapse collapse">
+                <li><li class=''><a class="" href="https://ghost.org/">Home</a></li></li>
+                <li><a href="http://marketplace.ghost.org">Marketplace</a></li>
+                <li><a href="http://support.ghost.org">Support</a></li>
+                <li><a href="http://blog.ghost.org">Blog</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a data-toggle="dropdown" class="usermenu" href="#">example</a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                            <li><a class="" href="https://ghost.org/example/">View my Profile</a></li>
+                            <li><a class="" href="https://ghost.org/settings/profile/">Account Settings</a></li>
+                            <li class="divider" role="presentation"></li>
+                            <li><a class="logout" href="https://ghost.org/logout/">Log out</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="clearfix"></div>
+<main role="main">
+    <section class="page-wrapper">
+        <header class="edit-blog-header">
+            <a href="/blogs/" class="edit-blog-back">
+                <span class="hidden">Back</span>
+            </a>
+<span class="edit-blog-name-domain">
+<h3 class="edit-blog-name">Example</h3>
+<p class="edit-blog-domain">&raquo; <a href="http://example.com" target="_blank">example.com</a></p>
+</span>
+            <a class="edit-blog-login" href="https://example.ghost.io/ghost" target="_blank">
+                <span class="edit-blog-login-text">Log in and write on this blog</span>
+            </a>
+        </header>
+        <section class="blog-settings clearfix">
+            <form accept-charset="UTF-8" action="/blogs/example/" class="editblog-form" enctype="multipart/form-data" method="post" novalidate="novalidate"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;"/><input name="_method" type="hidden" value="patch"/><input name="authenticity_token" type="hidden" value="LKdb4MFixKel5A/tqd6MFO75LyXPD5ms9TYMb03OdP0="/></div>
+                <div class="clearfix">
+                    <div class="left">
+                        <label class="vertical">
+                            <b>Blog Name</b>
+                            <input autocomplete="off" autocorrect="off" class="wide" id="name" name="name" type="text" value="Example"/>
+                            <p>This is just a reference name which appears on ghost.org</p>
+                        </label>
+                        <label class="vertical">
+                            <b>Blog URL</b>
+                            <div class="blog-url-wrap">
+                                <input autocapitalize="off" autocomplete="off" autocorrect="off" class="blog-url wide" id="subdomain" name="subdomain" type="url" value="example"/>
+                                <span class="postfix">.ghost.io</span>
+                            </div>
+                            <p>The website address of your blog</p>
+                        </label>
+                        <label class="vertical">
+                            <b>Custom Domain</b>
+                            <div class="blog-url-wrap">
+                                <input autocapitalize="off" autocomplete="off" autocorrect="off" class="wide" id="external_domain" name="external_domain" type="url" value="example.com"/>
+                            </div>
+                            <p><a href="#" data-toggle="modal" data-target="#domain-help">Why is it not working?</a></p>
+                        </label>
+                    </div>
+                    <div class="right blog-drop-zones">
+<span class="label vertical">
+<b>Add a Theme</b>
+<div class="have-custom-theme">
+    <p>You currently have a custom theme. Your latest custom theme was uploaded on February 22, 2015 23:10.</p>
+    <p class="checkbox">
+        <label class="raw">
+            <input id="delete_theme" name="delete_theme" type="checkbox" value="1"/>
+            Delete the current theme and restore default?
+        </label>
+    </p>
+</div>
+</span>
+<span class="label vertical raw">
+<div class="file-drop-zone">
+    <span class="icon icon-theme"></span>
+    <b class="file-drop-zone-label">Upload a New Theme</b>
+    <input id="custom_theme" name="custom_theme" type="file"/>
+</div>
+</span>
+                    </div>
+                </div>
+                <div class="blog-settings-save">
+                    <button class="button-save wide" type="submit" data-pseudo-click-target="blog-settings-save">Save all blog settings</button>
+                </div>
+            </form>
+        </section>
+    </section>
+    <section class="page-wrapper">
+        <section class="blog-settings-export-delete clearfix">
+            <form accept-charset="UTF-8" action="/blogs/example/" data-confirm="Are you sure you wish to delete this blog? All data will be gone for ever! Seriously. Never to seen again. No backups. No nothing. Be careful!" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;"/><input name="_method" type="hidden" value="delete"/><input name="authenticity_token" type="hidden" value="LKdb4MFixKel5A/tqd6MFO75LyXPD5ms9TYMb03OdP0="/></div>
+                <label class="vertical">
+                    <b>Delete my Blog</b>
+                    <button class="button-warning wide">Delete this BLog forever</button>
+                    <p>Permanent, irreversible deletion. No recovery.</p>
+                </label>
+            </form>
+        </section>
+    </section>
+    <article id="domain-help" class="modal modal-small fade" tabindex="-1" role="dialog" aria-labelledby="Help setting up your custom domain" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h4 class="modal-title">Custom Domain Help</h4>
+                    <a class="modal-close" data-dismiss="modal" aria-hidden="true" href="#"><span class="hidden">Close</span></a>
+                </header>
+                <div class="modal-body">
+                    <p style="margin-top: 0;">Have you followed our <a href="/blogs/domains/#setup">full setup instructions</a> for custom domains? Double check again.</p>
+                    <p>The number 1 most common problem when people get to this screen and it still doesn't work, is that they set up their CNAME record correctly for <pre>www.myblog.com</pre> but in the box on this page they only entered <pre>myblog.com</pre> Make sure you enter the <em>exact</em> domain which you pointed your CNAME record to.</p>
+                </div>
+            </div>
+        </div>
+    </article>
+</main>
+<div class="clearfix"></div>
+<footer id="global-footer">
+    <nav id="footer-nav" role="navigation">
+        <ul id="footer-menu">
+            <li class="logo"><a class="" href="/"><span class='hidden'>Ghost</span></a></li>
+            <li><a class="" href="/about/">About</a></li>
+            <li><a href="http://status.ghost.org">Status</a></li>
+            <li><a class="" href="/pricing/">Pricing</a></li>
+            <li><a href="http://blog.ghost.org">Blog</a></li>
+            <li><a class="" href="/about/terms/">Terms</a></li>
+            <li><a class="" href="/about/privacy/">Privacy</a></li>
+            <li><a class="" href="/about/contact/">Contact</a></li>
+        </ul>
+        <div class="clearfix"></div>
+        <ul id="social-menu">
+            <li class="github"><a href="https://github.com/tryghost/Ghost"><span class="hidden">Github</span></a></li>
+            <li class="twitter"><a href="https://twitter.com/tryghost"><span class="hidden">Twitter</span></a></li>
+            <li class="gplus"><a href="https://plus.google.com/u/0/b/114465948129362706086/114465948129362706086/posts"><span class="hidden">Google+</span></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/ghost"><span class="hidden">Facebook</span></a></li>
+        </ul>
+    </nav>
+    <div class="clearfix"></div>
+</footer>
+</body>
+</html>
