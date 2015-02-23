@@ -48,7 +48,7 @@ In your project's Gruntfile, add a section named `ghost-upload` to the data obje
 
 ```js
 grunt.initConfig({
-  ghost-upload: {
+  'ghost-upload': {
     options: {
       userEnv: 'GHOST_USER',
       passEnv: 'GHOST_PASS',
