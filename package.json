@@ -1,6 +1,6 @@
 {
   "name": "grunt-ghost-upload",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Upload a theme to Ghost Pro via the POST API",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
