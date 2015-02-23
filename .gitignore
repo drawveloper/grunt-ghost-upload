@@ -4,3 +4,5 @@
 .idea/
 npm-debug.log
 node_modules/
+tasks/lib/steps.js
+tasks/ghost-upload.js

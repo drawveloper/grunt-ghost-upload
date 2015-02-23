@@ -4,9 +4,7 @@ Upload a theme to Ghost Pro via the POST API.
 
 ## Motivation
 
-Basically, I was tired of the boresome process of uploading a theme to Ghost Pro.
-
-You need to
+Basically, I was tired of the boresome process of uploading a theme to Ghost Pro, where you need to:
 
 - Create a zip
 - Open your browser
@@ -17,17 +15,15 @@ You need to
 Yikes!
 
 So, I did what any programmer tired of repetition does: I automated the process.
-This task uses your credentials to login and upload your theme.
 
-Your credentials are expected to be in environment variables `GHOST_USER` and `GHOST_PASS`.
-
-Then, simply configure this task with the `zip` (path to your theme's zip) and `blog` (your blog id in Ghost Pro) properties and you're good to go.
+This task uses your credentials to login and upload your theme zip.
 
 **DISCLAIMER:** This is a **major hack** and is in no way guaranteed to work for you :)
+
 Once the Ghost API is finished and public, I'll probably rewrite this using it.
 
 ## Getting Started
-This plugin requires Grunt `{%= grunt_version %}`
+This plugin requires Grunt `0.4.5`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -40,6 +36,16 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 ```js
 grunt.loadNpmTasks('grunt-ghost-upload');
 ```
+
+## Credentials in environment variables
+
+Your credentials in Ghost Pro are expected to be in environment variables `GHOST_USER` and `GHOST_PASS`.
+
+You can export them by issuing the following commands in your terminal:
+
+    export GHOST_USER=myuser@gmail.com
+    export GHOST_PASS=mysupersecretpassword
+
 
 ## The "ghost-upload" task
 
@@ -82,6 +88,10 @@ For example, if your URL reads:
     https://ghost.org/blogs/firstdoit/
 
 Then, the blog id is `firstdoit`.
+
+## Using with `grunt-contrib-compress`
+
+You can use [grunt-contrib-compress](https://github.com/gruntjs/grunt-contrib-compress) in tandem with this task to achieve easy deploy of your Ghost theme. You can check a working example at [this Gruntfile](https://github.com/firstdoit/firstdoit.com/blob/39070bb6eff920e7f90d44d4f4c296f0ab483170/Gruntfile.coffee#L100).
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
