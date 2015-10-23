@@ -70,6 +70,7 @@ module.exports = (options) ->
     formData['name'] = $("input[name='name']").val()
     formData['subdomain'] = $("input[name='subdomain']").val()
     formData['external_domain'] = $("input[name='external_domain']").val()
+    formData['force_ssl'] = $("input[name='force_ssl']").val()
 
     return formData
 
